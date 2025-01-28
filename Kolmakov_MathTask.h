@@ -11,7 +11,7 @@ bool UserInput(string input) {
 //попытаться
     try {
         //преобразование введенного в int
-        int number = stoi(input)
+        int number = stoi(input);
     }
     catch (...) // если возникла ошибка в блоке try
     { return false; }

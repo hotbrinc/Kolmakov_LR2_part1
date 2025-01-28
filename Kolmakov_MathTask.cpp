@@ -24,13 +24,14 @@ int main()
     // Ввод высоты прямоугольника
     cout << "input height B" << endl;
     getline(cin, str_input);
-    while (!UserInput(str_input)) {
+    while (!UserInput(str_input)) {2
+    
         cout << "input height B" << endl;
         getline(cin, str_input);
     }
     int NumberB = stoi(str_input);
 
-    int RectangleArea = CalcRectangleArea(NumberA, NumberB)
+    int RectangleArea = CalcRectangleArea(NumberA, NumberB);
     cout << "Area of Rectangle is " << RectangleArea << endl;
 
 }
