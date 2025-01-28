@@ -24,8 +24,8 @@ int main()
     // Ввод высоты прямоугольника
     cout << "input height B" << endl;
     getline(cin, str_input);
-    while (!UserInput(str_input)) {2
-    
+    while (!UserInput(str_input)) {
+
         cout << "input height B" << endl;
         getline(cin, str_input);
     }
