@@ -25,6 +25,7 @@ int main()
     cout << "input height B" << endl;
     getline(cin, str_input);
     while (!UserInput(str_input)) {
+
         cout << "input height B" << endl;
         getline(cin, str_input);
     }
