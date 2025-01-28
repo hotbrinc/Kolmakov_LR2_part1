@@ -6,8 +6,12 @@ using namespace std;
 
 //проверка корректности вводимых данных
 bool UserInput(string input) {
-//если строка пустая - ввод некорректен
-    if (input.empty()) return false;
+    char first_char = input[0];  // Получение первого символа строки
+    if (first_char == '-' || !isdigit(first_char)) return false;  // Проверка на первый символ "-", 
+    // или что первый символ не цифра
+    
+    //если строка пустая - ввод некорректен
+    else if (input.empty()) return false;
 //попытаться
     try {
         //преобразование введенного в int
@@ -15,6 +19,8 @@ bool UserInput(string input) {
     }
     catch (...) // если возникла ошибка в блоке try
     { return false; }
+    
+    
     return true;
 }
 
