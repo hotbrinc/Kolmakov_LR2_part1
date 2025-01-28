@@ -9,7 +9,7 @@ void testCalcRectangleArea() {
     int a = 3;
     int b = 5;
     int expected = 15;
-    int actual = CalcRectangleArea(a, b);
+    int actual = CalcRectangleArea(a, b + 10);
     ASSERT_EQUAL(expected, actual);
 }
 int main() {
